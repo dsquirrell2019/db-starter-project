@@ -1,17 +1,20 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/"> World Wines </a>
+    <a class="navbar-brand" href="/"> Lockdown Workouts </a>
     <div class="navbar">
       <div class="navbar-nav">
         <a class="nav-link active" href="/">
           Home <span class="sr-only">(current)</span>
         </a>
-        <a class="nav-link" href="#"> Search Wines </a>
+        <a class="nav-link" href="search-exercises"> Search Workouts </a>
 
-        <a class="nav-link" href="tasters"> Tasters</a>
-        <a class="nav-link" href="tastings"> Tastings</a>
+        <a class="nav-link" href="exercise"> Exercises</a>
+        <a class="nav-link" href="muscles"> Muscles</a>
+        
         <% if(user) { %>
-        <a class="nav-link" href="create-tasting"> Write a Review </a>
+        <a class="nav-link" href="saved-exercises"> My Saved Workouts </a>
+        <a class="nav-link" href="create-exercises"> Create a New Workout Entry </a>
+        <a class="nav-link" href="create-muscles"> Create a New Muscle Group </a>
         <a class="nav-link" href="logout"> <%= user.email %> (Logout) </a> <%
         }%> <% if(!user) { %>
         <a class="nav-link" href="login"> Login </a>

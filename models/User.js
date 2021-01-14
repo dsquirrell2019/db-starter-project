@@ -5,7 +5,8 @@ const bcrypt = require('bcrypt');
 const userSchema = new Schema(
     {
         email: { type: String, required: [true, 'email is required'], unique: true },
-        password: { type: String, required: [true, 'password is required'] }
+        password: { type: String, required: [true, 'password is required'] },
+        saved_exercises: [{ type: mongoose.Schema.Types.ObjectId, ref: "Exercise" }], 
     },
     { timestamps: true }
 );

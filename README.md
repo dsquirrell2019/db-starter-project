@@ -1,5 +1,5 @@
 # Database Starter Project 
-https://radiant-sea-31647.herokuapp.com/ 
+//https://radiant-sea-31647.herokuapp.com/ 
 ## Getting Started
 
 - Clone this repo 
